@@ -2,12 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/2025sl93007/labsheet1-2025sl93007'
-            }
-        }
-
+ 
         stage('Build') {
             steps {
                 sh 'echo "Build Stage Running"'
